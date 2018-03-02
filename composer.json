@@ -14,13 +14,13 @@
   "require": {},
   "autoload": {
     "psr-4": {
-      "mikehins\\countries-zones\\": "src/"
+      "mikehins\\CountriesZones\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "mikehins\\countries-zones\\CountriesZonesServiceProvider"
+        "mikehins\\CountriesZones\\CountriesZonesServiceProvider"
       ]
     }
   }
