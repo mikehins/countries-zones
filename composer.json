@@ -20,7 +20,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "mikehins\\countries-zones\\CountriesZonesServiceProvider"
+        "mikehins\\CountriesZones\\CountriesZonesServiceProvider"
       ]
     }
   }
