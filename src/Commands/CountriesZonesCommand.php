@@ -29,6 +29,7 @@ class CountriesZonesCommand extends Command
 	
 	public function handle()
 	{
+		\Artisan::call('vendor:publish', ['--provider' => '"mikehins\CountriesZones" --tag=migration']);
 		\Artisan::call('migrate');
 		\Artisan::call('db:seed', ['--class' => 'mikehins\CountriesZones\database\seeds\DatabaseSeeder']);
 		\Artisan::call('make:model', ['name' => 'Country']);
