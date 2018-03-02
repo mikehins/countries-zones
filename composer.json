@@ -1,0 +1,27 @@
+{
+  "name": "mikehins/countries-zones",
+  "description": "Import countries and zones datas",
+  "type": "plugin",
+  "license": "DBAD",
+  "version": "1.0",
+  "authors": [
+    {
+      "name": "Mike Hins",
+      "email": "me@mikehins.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "mikehins\\countries-zones\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "mikehins\\CountriesZones\\CountriesZonesServiceProvider"
+      ]
+    }
+  }
+}
