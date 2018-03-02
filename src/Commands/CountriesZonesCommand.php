@@ -29,9 +29,10 @@ class CountriesZonesCommand extends Command
 	
 	public function handle()
 	{
+		\Artisan::call('migrate');
 		\Artisan::call('db:seed', ['--class' => 'mikehins\CountriesZones\database\seeds\DatabaseSeeder']);
-		\Artisan::call('make:model Countries');
-		\Artisan::call('make:model Zones');
+		\Artisan::call('make:model', ['name' => 'Country']);
+		\Artisan::call('make:model', ['name' => 'Zone']);
 		$this->info('The tables have been seeded');
 	}
 }

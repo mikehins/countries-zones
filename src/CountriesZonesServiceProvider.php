@@ -15,14 +15,6 @@ class CountriesZonesServiceProvider extends ServiceProvider
 	
 	public function boot()
 	{
-		$this->publishes([
-			__DIR__.'/database/migrations/' => database_path('migrations')
-		], 'migrations');
-		
-		/*
-		php artisan migrate
-		php artisan migrate db:seed --class=mikehins\CountriesZones\Seeds\DatabaseSeeder
-		*/
-		//\Artisan::call('db:seed', ['--class' => 'mikehins\CountriesZones\Seeds\DatabaseSeeder']);
+		$this->loadMigrationsFrom(__DIR__.'/database/migrations/');
 	}
 }
